@@ -1,3 +1,78 @@
-p {
-    font-weight:bolder;
+@font-face {
+    font-family: countryside;
+    src: url(Countryside.ttf);
+  }
+
+html, body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: white;
+}  
+
+#main-container {
+    /* border: solid 1px red; */
+    display:flex;
+}
+
+#left-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    position: relative;
+    background-image: url("images/background.jpg");
+}
+
+#logo-container {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: 35%;
+    align-items:center;
+    justify-content: center;
+}
+
+#logo-container img {
+    height: 50%;
+}
+
+#logo-container div {
+    color: white;
+    font-family: countryside;
+    font-size: 5vh;
+}
+
+#copyright, #copyright a:link, #copyright a:visited {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#right-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-top {
+    flex: 1.1;
+    background-color: #f9fafb;
+    font-size: 1.8rem;
+}
+
+#right-middle {
+    flex: 1;
+    background-color: white;
+    position:relative;
+    z-index:2;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+}
+
+#right-bottom {
+    flex: 1.1;
+    background-color: #f9fafb;
 }
