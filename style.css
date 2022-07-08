@@ -11,12 +11,10 @@ html, body {
 
 #main-container {
     display:flex;
-    border: solid 1px red;
     height: 100vh;
 }
 
 #left-container {
-    border: solid 1px red;
     display: flex;
     flex: 1;
     justify-content: center;
