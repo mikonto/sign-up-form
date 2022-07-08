@@ -12,7 +12,7 @@
         <div id="left-container">
             <div id="logo-container">
                     <img src="images/logo.svg" alt="">
-                    <div>Mikael</div>
+                    <div id="logo-text">Mikael</div>
             </div>
             <div id="copyright">Photo by Halie West on <a href="https://unsplash.com/">Unsplash</a>. Font by <a href="http://www.onlinewebfonts.com">Online Web Fonts</a></div>
         </div>
@@ -23,18 +23,41 @@
                 </div> 
             </div>
             <div id="right-middle">
-            <div id="form-title">
-                <p>Lets do this!</p>
+                <div id="form-title">
+                    <p>Lets do this!</p>
+                </div>
+                <form action="#">
+                <div id="form-container">
+                    <div id="form-left">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+                            <label for="password1">Password:</label><br>
+                            <input type="password" id="password1" name="password1" required onkeyup="checkpassword()">
+                    </div>
+                    <div id="form-right">
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" required><br>
+                            <label for="tel">Phone number:</label><br>
+                            <input type="tel" id="tel" name="tel"><br>
+                            <label for="password2">Confirm password:</label><br>
+                            <input type="password" id="password2" name="password2" required onkeyup="checkpassword()">
+                            <p id="passworderror"></p>
+                    </div> 
+                </div>
             </div>
-            <div id="form-container"></div>
-            </div>
-            <div id="right-bottom">
+            <div id="right-bottom"> 
                 <div id="button-container">
-                    <button>Create Account</button>
+                    <input type="submit" value="Create Account">
                     <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </div>
+        </form>
         </div>
     </div>
+
+    <script src="script.js">
+    </script>
 </body>
 </html>

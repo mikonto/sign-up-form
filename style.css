@@ -10,8 +10,8 @@ html, body {
 }  
 
 #main-container {
-    /* border: solid 1px red; */
     display:flex;
+    /* border: solid 1px red; */
 }
 
 #left-container {
@@ -27,23 +27,19 @@ html, body {
 #logo-container {
     display: flex;
     position: absolute;
-    top: 25%;
+    top: 400px;
     width: 100%;
-    height: 20%;
+    height: 250px;
     background-color: black;
     opacity: 35%;
     align-items:center;
     justify-content: center;
 }
 
-#logo-container img {
-    height: 50%;
-}
-
-#logo-container div {
+#logo-text {
     color: white;
     font-family: countryside;
-    font-size: 5vh;
+    font-size: 5rem;
 }
 
 #copyright, #copyright a:link, #copyright a:visited {
@@ -78,19 +74,63 @@ html, body {
     background-color: white;
     position:relative;
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+    padding-bottom: 50px;
 }
 
 #form-title {
-    /* border: solid 1px red; */
     font-size: 2.2rem;
     font-weight: bold;
     margin-left: 80px;
+    margin-right: 80px;
+}
+
+#form-title p {
+    margin-block-end: 0 !important;
 }
 
 #form-container {
-    /* border: solid 1px red; */
     height: 100%;
     margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+}
+
+#form-left {
+    flex: 0.5;
+}
+
+#form-right {
+    flex: 1.5;
+    margin-left: 70px;
+}
+
+#form-left label, #form-right label {
+    display: inline-block;
+    margin-top:30px;
+    font-size: 1.4rem;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    border-radius: 5px;
+  }
+
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
+    box-shadow: 2px 2px 5px 1px #ccc;
+    outline: none !important;
+    border: 1px solid blue;
+  }
+
+input:focus:invalid {
+    border: 1px solid red;
+}
+
+#form-right p {
+    color: red;
+    position: absolute;
+    margin-top: 5px;
 }
 
 #right-bottom {
@@ -98,7 +138,7 @@ html, body {
     background-color: #f9fafb;
 }
 
-button {
+input[type=submit] {
     margin: 50px 80px 20px 80px;
     background-color: #2e5f7f;
     border: none;
